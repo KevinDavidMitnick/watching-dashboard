@@ -7,11 +7,11 @@ PERMANENT_SESSION_LIFETIME = os.environ.get("PERMANENT_SESSION_LIFETIME",3600 * 
 SITE_COOKIE = os.environ.get("SITE_COOKIE","open-falcon-ck")
 
 # Falcon+ API
-API_ADDR = os.environ.get("API_ADDR","http://10.21.0.130:8080/api/v1")
+API_ADDR = os.environ.get("API_ADDR","http://127.0.0.1:8080/api/v1")
 
 # portal database
 # TODO: read from api instead of db
-PORTAL_DB_HOST = os.environ.get("PORTAL_DB_HOST","10.21.0.130")
+PORTAL_DB_HOST = os.environ.get("PORTAL_DB_HOST","127.0.0.1")
 PORTAL_DB_PORT = int(os.environ.get("PORTAL_DB_PORT",3306))
 PORTAL_DB_USER = os.environ.get("PORTAL_DB_USER","root")
 PORTAL_DB_PASS = os.environ.get("PORTAL_DB_PASS","root")
@@ -19,7 +19,7 @@ PORTAL_DB_NAME = os.environ.get("PORTAL_DB_NAME","falcon_portal")
 
 # alarm database
 # TODO: read from api instead of db
-ALARM_DB_HOST = os.environ.get("ALARM_DB_HOST","10.21.0.130")
+ALARM_DB_HOST = os.environ.get("ALARM_DB_HOST","127.0.0.1")
 ALARM_DB_PORT = int(os.environ.get("ALARM_DB_PORT",3306))
 ALARM_DB_USER = os.environ.get("ALARM_DB_USER","root")
 ALARM_DB_PASS = os.environ.get("ALARM_DB_PASS","root")
